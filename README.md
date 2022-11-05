@@ -23,13 +23,13 @@ I will explain here the formulas that I have used to implement the ray-casting. 
 
 Note: Im NoT DoNe yEt 🧟‍♀️
 
-Introduction:
+1: Introduction:
 ---------------
 
 I will explain what kind of calculation I will used to create, draw, and move around the walls.
 
-Ray-Casting:
-___________
+2: Ray-Casting:
+--------------
 
 - Ray is where something starts at a point, and then creates a line (you cannot see) in some direction away. The idea is that it then follows this line to see if it collides with anything.
 
