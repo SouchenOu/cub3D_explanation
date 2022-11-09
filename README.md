@@ -70,3 +70,6 @@ In order to explain the main idea of the formulas, let's say that we have the pl
 
 ---Using the player's coordinate and his looking angle we can calculate the ray's vector (X and Y components). Then calculate the offset (gridline outlier) the points where the rays could hit vertically and horizontally till the point of the wall.
 
+1: ow to calculate the ray's vector using the player's coordinates!
+
+
