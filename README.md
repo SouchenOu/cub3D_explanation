@@ -61,3 +61,9 @@ Vector3 direction determines the direction of our ray. Again, it’s a Vector3 t
 float distance is the distance that our ray should travel from the point of origin in the direction we determined, as a float value.
 
 int layerMask value is worth talking about, even if it’s not necessary. In your Unity 3D game, for the object, you are setting a ray for could ignore some specified objects while hitting the others. Int value helps you to tag what will be recognized. Rest will be ignored.
+
+The idea : 
+------------
+
+In order to explain the main idea of the formulas, let's say that we have the player's postion on a 2D map (x, y) coordinates. The player is looking at the wall in front of him (NORTH), let's say the looking angle is 90 which is straight to north. The distance from his coordinate to the point of the wall called a ray. Depending on the player's field of view(is the range of the observable world visible at any given time through the human eye) the number of the rays will be decided. If the field of view is 120 then his looking width will be 60 degrees to the left and 60 degrees to the right from the looking angle (90).
+
