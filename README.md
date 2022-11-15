@@ -88,6 +88,7 @@ Before continuing, we will define our coordinate system so that there is no conf
 <img width="449" alt="Screen Shot 2022-11-15 at 10 30 17 AM" src="https://user-images.githubusercontent.com/87101785/201883051-8e60a731-2349-4041-b268-ca8088c65fab.png">
 
 2::: RAY-CASTING STEP 2: DEFINING PROJECTION ATTRIBUTES:
+--------------------------------------------------------
 
 Now that we have the world, we need to define some attributes before we can project and render the world. Specifically, we need to know these attributes:
 
@@ -99,5 +100,7 @@ The player should be able to see what is in front of him/her. For this, we will 
 <img width="542" alt="Screen Shot 2022-11-15 at 10 33 24 AM" src="https://user-images.githubusercontent.com/87101785/201883799-35d8eb04-ad87-4cdb-b7a6-9c8c3aef8520.png">
 
 
+
+https://permadi.com/1996/05/ray-casting-tutorial-9/
 
 
