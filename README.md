@@ -70,6 +70,34 @@ In order to explain the main idea of the formulas, let's say that we have the pl
 
 ---Using the player's coordinate and his looking angle we can calculate the ray's vector (X and Y components). Then calculate the offset (gridline outlier) the points where the rays could hit vertically and horizontally till the point of the wall.
 
-1: ow to calculate the ray's vector using the player's coordinates!
+
+ Wait Wait .....
+ lets talk about raycasting steps:
+ 
+ 
+ 1::: RAY-CASTING STEP 1: CREATING A WORLDRAY-CASTING.
+ -----------------------------------------------------
+ 
+*For our purpose, each cube will have the size of 64x64x64 units. (The choice of 64 is arbitrary, but it will be useful to pick a number that is a multiple of 2; because we can perform some arithmetic shift operations on such number (shift operations are faster than multiplication or division). The larger the size of the cube, the blockier the world will look like, but smaller cube will make the rendering slower.)
+
+<img width="566" alt="Screen Shot 2022-11-15 at 10 28 42 AM" src="https://user-images.githubusercontent.com/87101785/201882736-704333cf-0ad4-49a7-a9f6-ff2940c7bf75.png">
+
+
+Before continuing, we will define our coordinate system so that there is no confusion. The coordinate system that we use is illustrated in
+
+<img width="449" alt="Screen Shot 2022-11-15 at 10 30 17 AM" src="https://user-images.githubusercontent.com/87101785/201883051-8e60a731-2349-4041-b268-ca8088c65fab.png">
+
+2::: RAY-CASTING STEP 2: DEFINING PROJECTION ATTRIBUTES:
+
+Now that we have the world, we need to define some attributes before we can project and render the world. Specifically, we need to know these attributes:
+
+1. Player/viewer’s height, player’s field of view (FOV), and player’s position.
+2. Projection plane’s dimension.
+3. Relationship between player and projection plane.
+The player should be able to see what is in front of him/her. For this, we will need to define a field of view (FOV). The FOV determines how wide the player sees the world in front of him/her (see Figure 8). Most humans have a FOV of 90 degrees or more. However, FOV with this angle does not look good on screen. Therefore, we define the FOV to be 60 degrees through trial and experimentation (on how good it looks on screen). The player’s height is defined to be 32 units because this is a reasonable assumption considering that walls (the cubes) are 64 units high.
+
+<img width="542" alt="Screen Shot 2022-11-15 at 10 33 24 AM" src="https://user-images.githubusercontent.com/87101785/201883799-35d8eb04-ad87-4cdb-b7a6-9c8c3aef8520.png">
+
+
 
 
