@@ -115,6 +115,7 @@ The player should be able to see what is in front of him/her. For this, we will 
 https://permadi.com/1996/05/ray-casting-tutorial-9/
 
 
+<img width="1507" alt="Screen Shot 2022-11-17 at 4 04 25 PM" src="https://user-images.githubusercontent.com/87101785/202481974-1d558cfd-ff10-4601-bb92-d56841ca0732.png">
 
 
 
