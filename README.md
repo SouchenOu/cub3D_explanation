@@ -102,9 +102,18 @@ The player should be able to see what is in front of him/her. For this, we will 
 <img width="1045" alt="Screen Shot 2022-11-17 at 10 43 31 AM" src="https://user-images.githubusercontent.com/87101785/202470813-39bdeda4-3ba2-4f0d-9c49-381d22c7fa62.png">
 
 
+<img width="1658" alt="Screen Shot 2022-11-17 at 3 03 00 PM" src="https://user-images.githubusercontent.com/87101785/202471018-6df854a1-b9d1-47d0-a952-ba174dae921d.png">
+
+
+
+<img width="1658" alt="Screen Shot 2022-11-17 at 3 03 00 PM" src="https://user-images.githubusercontent.com/87101785/202471173-835e92f0-dca1-476a-b5f8-eeff0ec39008.png">
+
+
+
+
+
 https://permadi.com/1996/05/ray-casting-tutorial-9/
 
-![Uploading Screen Shot 2022-11-17 at 3.03.00 PM.png…]()
 
 
 
