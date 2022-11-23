@@ -119,4 +119,9 @@ https://permadi.com/1996/05/ray-casting-tutorial-9/
 
 
 
+<img width="1027" alt="Screen Shot 2022-11-23 at 9 43 18 AM" src="https://user-images.githubusercontent.com/87101785/203503413-73add313-aa3f-4875-a65e-4625c02bd500.png">
+
+
+<img width="1027" alt="Screen Shot 2022-11-23 at 9 43 11 AM" src="https://user-images.githubusercontent.com/87101785/203503427-b4bc10b1-1d99-4e02-a083-2a4f2b44febd.png">
+
 
