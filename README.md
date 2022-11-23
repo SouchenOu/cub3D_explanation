@@ -124,4 +124,9 @@ https://permadi.com/1996/05/ray-casting-tutorial-9/
 
 <img width="1027" alt="Screen Shot 2022-11-23 at 9 43 11 AM" src="https://user-images.githubusercontent.com/87101785/203503427-b4bc10b1-1d99-4e02-a083-2a4f2b44febd.png">
 
+Texture:
+--------
+
+
+<img width="714" alt="Screen Shot 2022-11-23 at 2 12 18 PM" src="https://user-images.githubusercontent.com/87101785/203555439-3846066d-3b1a-4ec2-b117-49dbe71395b5.png">
 
