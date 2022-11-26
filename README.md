@@ -123,6 +123,7 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
        so our player look up
        
           +calculate rx:
+          -------------
           
           we have rx = adj + px
           
@@ -133,6 +134,7 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
           so rx = (ry - py)/tan(looking_angle) + px
           
           +calculate ry:
+          --------------
           
           ry: should be the player's Y coordinate but you should firstly scale the player's Y point to tile_size unit, for example  ((pY / 64) * 64);
 
