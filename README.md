@@ -89,8 +89,31 @@ Each time the ray will hit a grid line horizontally or vertically, that point ac
 <img width="150" alt="1" src="https://user-images.githubusercontent.com/87101785/204095671-2f203d29-cee7-448d-926a-0949cdfb9f71.png">
 
 
-Horizontal Grid Lines is the (NORTH & SOUTH), or the upper and the lower sides of a 2d map. Vertical Grid Lines is the (WEST & EAST), or the left and the right sides of a 2d map. Depending on the looking angle of the player we can decide where the ray is actually hitting vertically (left or right) and horizontally (up or down). Before that We actually need to understand how we can calculate the ray's line and the ray's coordinate.
+Horizontal Grid Lines is the (NORTH & SOUTH), or the upper and the lower sides of a 2d map. Vertical Grid Lines is the (WEST & EAST), or the left and the right sides of a 2d map. Depending on the looking angle of the player we can decide where the ray is actually hitting vertically (left or right) and horizontally (up or down). Before that We actually need to understand how we can calculate the ray's coordinate and the distance between the player and the ray.
 First thing to know in order to get the ray's coordinate (X and Y components) ray Y and ray X, is that we can use the rule of the right triangle.
+
+
+(we check our looking angle to know where our player look exactly!!)
+
+
+
++++++vertical GridLine:
+**********************
+
+//if the looking angle > 0 and looking angle < 3.14
+     then our player look down
+ //if the looking angle > 3.14
+     then our player look up
+ 
++++++horizontal Gridline :
+************************
+
+//if the looking angle < 3.14/2 or looking_angle > 3*3.14/2
+     then our player look right
+ //sinon look left
+
+ 
+
 
 
 
