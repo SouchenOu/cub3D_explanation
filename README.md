@@ -50,24 +50,50 @@ Briefly, Raycasting is the process of shooting an invisible ray from a point, in
 -------------------------------------------------------------------------------------------------------------------------
 
  Wait Wait .....
- lets talk about raycasting steps:
+ lets talk about Cub3D steps:
+ 
+ 1:::: parsing:
+ ---------------
  
  
- 1::: RAY-CASTING STEP 1: CREATING A WORLDRAY-CASTING.
+ 1::: RAY-CASTING STEP 1: define some attribute:
  -----------------------------------------------------
  
 *For our purpose, each cube will have the size_width 64 and size_height 64 units. (you can choose any size it should be just the same in height and width). 
 
 The larger the size of the cube, the blockier the world will look like, but smaller cube will make the rendering slower.)
 
-then we need to define soma attributes before we can project and render the world:
+then we need to define some attributes before we can project and render the world:
 
 1: player’s position
 
-2 : player is demension.
+2 : player is direction.
 
 3: player’s field of view (FOV); The player should be able to see what is in front of him/her. For this, we will need to define a field of view
 (FOV). The FOV determines how wide the player sees the world in front of him/her
+
+4: cub_width and cub_height (Tile_size).
+
+5: read our map and put it in array double dimension.
+
+6: calculate the looking angle by using the direction of the player
+
+
+3: GridLine Hit Checkers :
+--------------------------
+
+here we will calculate ray.x and ray.y (ray coordinate)
+ 
+Each time the ray will hit a grid line horizontally or vertically, that point actually should be the position where we can check if it's a wall or not. To do that we firstly need to know how to calculate the ray's cordinate using the player's coordinates, then add a specfic value (parameters) to hit the first grid line, then continually add a constant value to hit each grid line till the wall, these constant values called (Grid Offsets).
+
+<img width="150" alt="1" src="https://user-images.githubusercontent.com/87101785/204095671-2f203d29-cee7-448d-926a-0949cdfb9f71.png">
+
+
+Horizontal Grid Lines is the (NORTH & SOUTH), or the upper and the lower sides of a 2d map. Vertical Grid Lines is the (WEST & EAST), or the left and the right sides of a 2d map. Depending on the looking angle of the player we can decide where the ray is actually hitting vertically (left or right) and horizontally (up or down). Before that We actually need to understand how we can calculate the ray's line and the ray's coordinate.
+First thing to know in order to get the ray's coordinate (X and Y components) ray Y and ray X, is that we can use the rule of the right triangle.
+
+
+
 
 
 <img width="566" alt="Screen Shot 2022-11-15 at 10 28 42 AM" src="https://user-images.githubusercontent.com/87101785/201882736-704333cf-0ad4-49a7-a9f6-ff2940c7bf75.png">
