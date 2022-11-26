@@ -39,10 +39,11 @@ For every x of the screen (i.e. for every vertical stripe of the screen), send o
 
 <img width="205" alt="Screen Shot 2022-11-05 at 5 54 04 PM" src="https://user-images.githubusercontent.com/87101785/200131911-b2845c00-659b-4023-8e90-43f67fd54bce.png">
 
-(- Ray is where something starts at a point, and then creates a line (you cannot see) in some direction away. The idea is that it then follows this line to see if it collides with anything.)
+(Ray: is where something starts at a point, and then creates a line (you cannot see) in some direction away. The idea is that it then follows this line to see if it collides with anything.)
 
 -------------------------------------------------------------------------------------------------------------------------
 So What is Raycasting: 
+---------------------
 
 Briefly, Raycasting is the process of shooting an invisible ray from a point, in a specified direction to detect whether any colliders lay in the path of the array. The name is pretty self-explanatory in that sense. Imagine you want your character to shoot an object. The impact and distance traveled by the bullet are calculated and executed by Raycasting.
 
@@ -55,18 +56,22 @@ Briefly, Raycasting is the process of shooting an invisible ray from a point, in
  1::: RAY-CASTING STEP 1: CREATING A WORLDRAY-CASTING.
  -----------------------------------------------------
  
-*For our purpose, each cube will have the size_width 64 and size_height 64 units. (you can choose any size it should be just the same in height and width). The larger the size of the cube, the blockier the world will look like, but smaller cube will make the rendering slower.)
+*For our purpose, each cube will have the size_width 64 and size_height 64 units. (you can choose any size it should be just the same in height and width). 
+
+The larger the size of the cube, the blockier the world will look like, but smaller cube will make the rendering slower.)
 
 then we need to define soma attributes before we can project and render the world:
+
 1: player’s position
+
 2 : player is demension.
-3: player’s field of view (FOV); The player should be able to see what is in front of him/her. For this, we will need to define a field of view (FOV). The FOV determines how wide the player sees the world in front of him/her
+
+3: player’s field of view (FOV); The player should be able to see what is in front of him/her. For this, we will need to define a field of view
+(FOV). The FOV determines how wide the player sees the world in front of him/her
 
 
 <img width="566" alt="Screen Shot 2022-11-15 at 10 28 42 AM" src="https://user-images.githubusercontent.com/87101785/201882736-704333cf-0ad4-49a7-a9f6-ff2940c7bf75.png">
 
-
-Before continuing, we will define our coordinate system so that there is no confusion. The coordinate system that we use is illustrated in
 
 <img width="449" alt="Screen Shot 2022-11-15 at 10 30 17 AM" src="https://user-images.githubusercontent.com/87101785/201883051-8e60a731-2349-4041-b268-ca8088c65fab.png">
 
