@@ -237,23 +237,23 @@ The Y offset will be the size of the grid (Tile_size).
 
 
 The offsets will be the same but only the direction of the Y will be changed..
-oY = -64;
-oX = oY * tan(looking angle);
+       oY = -64;
+       oX = oY * tan(looking angle);
 
 **If the player was looking East
 
 <img width="250" alt="V-R" src="https://user-images.githubusercontent.com/87101785/204102622-1b762241-4dc2-48ca-9c3f-7746f7b6a24e.png">
 
-oX = 64;
-oY = oX * tan(looking angle);
+       oX = 64;
+       oY = oX * tan(looking angle);
 
 **If the player was looking West
 
 <img width="250" alt="V-L" src="https://user-images.githubusercontent.com/87101785/204102651-33c93f7a-dfda-43e6-be42-dacce49f7ece.png">
 
 The offsets will be the same but only the direction of the X will be changed..
-oX = -64;
-oY = oX * tan(looking angle);
+       oX = -64;
+       oY = oX * tan(looking angle);
 
 
 
