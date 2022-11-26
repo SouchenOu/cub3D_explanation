@@ -104,8 +104,8 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
 +++++vertical GridLine:
 **************************************************************************************************************************
 
-1: *********firstly we check the looking angle then calculate the ray cordinate by using the right triangle rule :
-------------------------------------------------------------------------------------------------------------------
+          1: *********firstly we check the looking angle then calculate the ray cordinate by using the right triangle rule :
+                        -----------------------------------------------------------------------------------------
 
      -if the looking angle > 0 and looking angle < 3.14
 
@@ -206,19 +206,54 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
      
 <img width="150" alt="10" src="https://user-images.githubusercontent.com/87101785/204099865-9a0325db-5ee6-415d-bf11-9f980e0345fd.png">
 
- 2 : GridLine offset:
+          *****************2 : GridLine offset:
+          -------------------------------------------------------------------
  
 Offset basically means the amount or a value by which the calculation is out of line or where it could hit the outlier. And here it means the value to add each time to hit the next grid line. So, we want the rays to hit the grid lines not more not a less. Therefore, to calculate these values we are going to use right triangle rule again. 
+
 
   wait wait to explaine more !!
  
  
- until now we have ray coordinate right !
+until now we have ray coordinate right !
  
 let this ray move forward on the 2D map, until it hits a map square that is a wall. and always check If it hit a wall, if not add the offset sinon calculate the distance of this hit point to the player.
 
 <img width="1020" alt="Screen Shot 2022-11-20 at 11 33 21 AM" src="https://user-images.githubusercontent.com/69278312/203140125-ade7f73e-4ee8-4494-b2a3-176a460bd324.png">
 
+
+**If the player was looking North:
+
+<img width="250" alt="H-U" src="https://user-images.githubusercontent.com/87101785/204102509-356413cf-2984-4425-b8a5-60e292140e0e.png">
+
+The Y offset will be the size of the grid (Tile_size).
+
+      offset-Y = 64;
+      offset-X = oY * tan(looking angle);
+
+**If the player was looking South
+
+<img width="250" alt="H-D" src="https://user-images.githubusercontent.com/87101785/204102595-60cd1aca-c163-49ce-86b5-d2f3f0866d49.png">
+
+
+The offsets will be the same but only the direction of the Y will be changed..
+oY = -64;
+oX = oY * tan(looking angle);
+
+**If the player was looking East
+
+<img width="250" alt="V-R" src="https://user-images.githubusercontent.com/87101785/204102622-1b762241-4dc2-48ca-9c3f-7746f7b6a24e.png">
+
+oX = 64;
+oY = oX * tan(looking angle);
+
+**If the player was looking West
+
+<img width="250" alt="V-L" src="https://user-images.githubusercontent.com/87101785/204102651-33c93f7a-dfda-43e6-be42-dacce49f7ece.png">
+
+The offsets will be the same but only the direction of the X will be changed..
+oX = -64;
+oY = oX * tan(looking angle);
 
 
 
