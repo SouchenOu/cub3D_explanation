@@ -111,9 +111,22 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
 
         so our player look down
         
-        rx:
-        
-        ry:
+        +calculate rx:
+          -------------
+          
+          we have rx = adj + px
+          
+          by using right triangle rule adj = opp/tan(looking_angle)
+          
+          and we have opp = (ry - py)
+          
+          so rx = (ry - py)/tan(looking_angle) + px
+          
+          +calculate ry:
+          --------------
+          
+          ry: should be the player's Y coordinate but you should firstly scale the player's Y point to tile_size unit, for example  ((pY / 64) * 64);
+
         
 <img width="80" alt="8" src="https://user-images.githubusercontent.com/87101785/204099806-96b42dd8-e45d-4a32-b701-27648a2b9c67.png">
 
