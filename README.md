@@ -206,9 +206,18 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
      
 <img width="150" alt="10" src="https://user-images.githubusercontent.com/87101785/204099865-9a0325db-5ee6-415d-bf11-9f980e0345fd.png">
 
+ 2 : GridLine offset:
  
+Offset basically means the amount or a value by which the calculation is out of line or where it could hit the outlier. And here it means the value to add each time to hit the next grid line. So, we want the rays to hit the grid lines not more not a less. Therefore, to calculate these values we are going to use right triangle rule again. 
 
+  wait wait to explaine more !!
+ 
+ 
+ until now we have ray coordinate right !
+ 
+let this ray move forward on the 2D map, until it hits a map square that is a wall. and always check If it hit a wall, if not add the offset sinon calculate the distance of this hit point to the player.
 
+<img width="1020" alt="Screen Shot 2022-11-20 at 11 33 21 AM" src="https://user-images.githubusercontent.com/69278312/203140125-ade7f73e-4ee8-4494-b2a3-176a460bd324.png">
 
 
 
