@@ -111,7 +111,7 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
 
         so our player look down
         
-        +calculate rx:
+          +calculate rx:
           -------------
           
           we have rx = adj + px
@@ -166,7 +166,7 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
 
         so our player look right
         
-        +calculate rx:
+          +calculate rx:
           -------------
           
           we have rx = adj + px
@@ -187,7 +187,7 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
      
      -sinon look left
      
-     +calculate rx:
+          +calculate rx:
           -------------
           
           we have rx = adj + px
