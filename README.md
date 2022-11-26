@@ -101,15 +101,20 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
 **********************
 
 //if the looking angle > 0 and looking angle < 3.14
+
      then our player look down
+     
  //if the looking angle > 3.14
+ 
      then our player look up
  
 +++++horizontal Gridline :
 ************************
 
 //if the looking angle < 3.14/2 or looking_angle > 3*3.14/2
+
      then our player look right
+     
  //sinon look left
 
  
