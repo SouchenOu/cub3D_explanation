@@ -56,7 +56,11 @@ Briefly, Raycasting is the process of shooting an invisible ray from a point, in
  ---------------
  
  
- 1::: RAY-CASTING STEP 1: define some attribute:
+ 
+ 
+ 
+ 
+ 2::: RAY-CASTING STEP 1: define some attribute:
  -----------------------------------------------------
  
 *For our purpose, each cube will have the size_width 64 and size_height 64 units. (you can choose any size it should be just the same in height and width). 
@@ -100,12 +104,16 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
 +++++vertical GridLine:
 **************************************************************************************************************************
 
-1: firstly we check the looking angle :
---------------------------------------
+1: *********firstly we check the looking angle then calculate the ray cordinate by using the right triangle rule :
+------------------------------------------------------------------------------------------------------------------
 
      -if the looking angle > 0 and looking angle < 3.14
 
         so our player look down
+        
+        rx:
+        
+        ry:
         
 <img width="80" alt="8" src="https://user-images.githubusercontent.com/87101785/204099806-96b42dd8-e45d-4a32-b701-27648a2b9c67.png">
 
@@ -113,17 +121,25 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
      -if the looking angle > 3.14
  
        so our player look up
+       
+          +calculate rx:
+          
+          we have rx = adj + px
+          
+          by using right triangle rule adj = opp/tan(looking_angle)
+          
+          and we have opp = (ry - py)
+          
+          so rx = (ry - py)/tan(looking_angle) + px
+          
+          +calculate ry:
+          
+          ry: should be the player's Y coordinate but you should firstly scale the player's Y point to tile_size unit, for example  ((pY / 64) * 64);
+
         
  <img width="100" alt="7" src="https://user-images.githubusercontent.com/87101785/204099793-5bfeabf2-e84c-4db1-80be-aa349f5c71c7.png">
 
         
-2: we calculate the ray cordinate by using the right triangle rule:
--------------------------------------------------------------------
-
-by using the right triangle rule:
-
-
-
 
 
 **************************************************************************************************************************
