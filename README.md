@@ -261,6 +261,21 @@ The offsets will be the same but only the direction of the X will be changed..
        
        oY = oX * tan(looking angle);
 
+Then we do the wall checking loop, in the loop we should add the offset values to the ray values till it hit the wall.
+
+       while (1)
+       {
+          if(!wall)
+          {
+             rayY += oY;
+             rayX += oX;
+          }
+ 
+          else {
+          // calcule the distance 
+          then
+           break ;
+       }
 
 
 <img width="566" alt="Screen Shot 2022-11-15 at 10 28 42 AM" src="https://user-images.githubusercontent.com/87101785/201882736-704333cf-0ad4-49a7-a9f6-ff2940c7bf75.png">
