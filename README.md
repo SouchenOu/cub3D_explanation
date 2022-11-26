@@ -105,14 +105,14 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
 
         then our player look down
         
-        <img width="80" alt="8" src="https://user-images.githubusercontent.com/87101785/204099806-96b42dd8-e45d-4a32-b701-27648a2b9c67.png">
+<img width="80" alt="8" src="https://user-images.githubusercontent.com/87101785/204099806-96b42dd8-e45d-4a32-b701-27648a2b9c67.png">
 
      
      -if the looking angle > 3.14
  
         then our player look up
         
-        <img width="100" alt="7" src="https://user-images.githubusercontent.com/87101785/204099793-5bfeabf2-e84c-4db1-80be-aa349f5c71c7.png">
+ <img width="100" alt="7" src="https://user-images.githubusercontent.com/87101785/204099793-5bfeabf2-e84c-4db1-80be-aa349f5c71c7.png">
 
         
 2: we calculate the ray cordinate by using the right triangle rule:
@@ -126,11 +126,12 @@ by using the right triangle rule:
      -if the looking angle < 3.14/2 or looking_angle > 3*3.14/2
 
         then our player look right
-        <img width="150" alt="9" src="https://user-images.githubusercontent.com/87101785/204099840-3b4e3f21-78d1-4fd1-aacf-71b37111eafb.png">
+        
+<img width="150" alt="9" src="https://user-images.githubusercontent.com/87101785/204099840-3b4e3f21-78d1-4fd1-aacf-71b37111eafb.png">
      
      -sinon look left
      
-     <img width="150" alt="10" src="https://user-images.githubusercontent.com/87101785/204099865-9a0325db-5ee6-415d-bf11-9f980e0345fd.png">
+<img width="150" alt="10" src="https://user-images.githubusercontent.com/87101785/204099865-9a0325db-5ee6-415d-bf11-9f980e0345fd.png">
 
  
 
