@@ -344,7 +344,7 @@ and we have the projection plane (it is my flat screen), and what i want to find
 <img width="1136" alt="Screen Shot 2022-11-27 at 11 27 34 AM" src="https://user-images.githubusercontent.com/87101785/204130376-179011a1-bd6e-41d2-8f73-ebf341b5ae88.png">
 
 
-so by using a triangle similarity we will calcule the wallStripHeight:
+so by using a triangle similarity rule we will calcule the wallStripHeight:
 
  
  
