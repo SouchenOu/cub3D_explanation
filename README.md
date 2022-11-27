@@ -365,9 +365,9 @@ let's calculate (projectedwallHeight):
 
                                 actualWall_height * distance-from-player-toProjectedPlane
                                 
-projected_wall_height = -------------------------------------------------------------------
+projected_wall_height =         -----------------------------------------------------------
 
-                                              distance-to-the-wall
+                                                  distance-to-the-wall
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
