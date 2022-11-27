@@ -385,11 +385,11 @@ distance-from-player-toProjectedPlane = ----------------------------------------
                                                 tan(fov/2)
                    
                    
+                   we can put  W_Height in  distance-from-player-toProjectedPlane
                    
                    
                    
-                   
-                   
+                                 
                    
    then:
                    
