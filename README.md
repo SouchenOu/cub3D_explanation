@@ -295,18 +295,25 @@ Then we do the wall checking loop, in the loop we should add the offset values t
 ---------------------------
 
 
-Okay let's wrap this all up. Using all of these ideas we can finally end up with these steps. Since the number of rays is the size of the width we can create this loop, inside the loop we should do the following steps..
+Okay let's wrap this all up. Using all of these ideas we can finally end up with these steps. Since the number of rays is the width of the map we can create this loop, inside the loop we should do the following steps..
+
 1- Do the gridline check and get the final ray points.
+
 2- Calculate the wall height using the HEIGHT of the screen and the ray length.
+
 3- Calculate the starting point and the ending point of the walls.
+
 4- Start drawing.
 
 
 
 
 
-// drawing the wall pixel colonne by pixel colonne
-// each one of colonne represent each one of the rays tha where representing in our field of view
+// we will drawing the wall pixel colonne by pixel colonne
+// we will go from left to right, colone by colone depends of how many of rays we have(map width).
+// each one of colonne represent each one of the rays that  representing in our field of view.
+// then calcule the wallStripHeight is the height of each one of walls in the screen
+
 
 
 <img width="432" alt="Screen Shot 2022-11-27 at 10 55 00 AM" src="https://user-images.githubusercontent.com/87101785/204129182-b847da76-e410-4e7f-83c9-daf596c3814c.png">
@@ -314,7 +321,7 @@ Okay let's wrap this all up. Using all of these ideas we can finally end up with
 <img width="1082" alt="Screen Shot 2022-11-27 at 10 54 44 AM" src="https://user-images.githubusercontent.com/87101785/204129185-006a7bd7-7fbd-479a-8876-5b0c2028a2ab.png">
 
 
-
+<img width="679" alt="Screen Shot 2022-11-27 at 11 06 14 AM" src="https://user-images.githubusercontent.com/87101785/204129627-89ca711b-3626-4d2e-a13a-190dba6976fa.png">
 
 
 
