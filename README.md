@@ -305,6 +305,15 @@ Okay let's wrap this all up. Using all of these ideas we can finally end up with
 
 
 
+// drawing the wall pixel colonne by pixel colonne
+// each one of colonne represent each one of the rays tha where representing in our field of view
+
+
+<img width="432" alt="Screen Shot 2022-11-27 at 10 55 00 AM" src="https://user-images.githubusercontent.com/87101785/204129182-b847da76-e410-4e7f-83c9-daf596c3814c.png">
+
+<img width="1082" alt="Screen Shot 2022-11-27 at 10 54 44 AM" src="https://user-images.githubusercontent.com/87101785/204129185-006a7bd7-7fbd-479a-8876-5b0c2028a2ab.png">
+
+
 
 
 
