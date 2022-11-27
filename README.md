@@ -365,9 +365,41 @@ let's calculate (projectedwallHeight):
 
                                 actualWall_height * distance-from-player-toProjectedPlane
                                 
-projected_wall_height =         -----------------------------------------------------------
+projected_wall_height = ----------------------------------------------------------------------------
 
                                                   distance-to-the-wall
+                                                  
+                                                  
+we have  :     
+
+actualWall_height = 64 
+
+distance-from-player-toProjectedPlane :
+       by using the right triangle rule we have  tan = opposite / adjacent so here the adj is exactlt the distance from-player-toProjectedPlan  
+       and the opposite is Window_width/2 so ...
+       
+                                             window_width /2
+                                             
+distance-from-player-toProjectedPlane = -----------------------------------------
+                                                
+                                                tan(fov/2)
+                   then:
+                   
+                                        
+                                        
+                                       window_width /2
+                                       
+                               64 *   -------------------
+                               
+                                          tan(fov/2)
+                                          
+projected_wall_height = ----------------------------------------------------------------------------
+
+                                    distance-to-the-wall.  (ray distance)
+                                                  
+
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
