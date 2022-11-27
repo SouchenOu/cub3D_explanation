@@ -278,9 +278,11 @@ Then we do the wall checking loop, in the loop we should add the offset values t
                    break ;
                }
        
-          
-      *******3: calculate the distance :
-      ---------------------------------------------------
+      
+      
+      
+  *******3: calculate the distance :
+  ---------------------------------------------------
           
  Now we have ray coordinate in vertical side and horizontal side so we calculate the distance between ray and our player in the both side 
  then compare it  and we will use the smallest one to draw the wall. 
