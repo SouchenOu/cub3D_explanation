@@ -206,8 +206,9 @@ First thing to know in order to get the ray's coordinate (X and Y components) r
      
 <img width="150" alt="10" src="https://user-images.githubusercontent.com/87101785/204099865-9a0325db-5ee6-415d-bf11-9f980e0345fd.png">
 
-          *****************2 : GridLine offset:
-          -------------------------------------------------------------------
+
+       *****************2 : GridLine offset:
+       -------------------------------------------------------------------
  
 Offset basically means the amount or a value by which the calculation is out of line or where it could hit the outlier. And here it means the value to add each time to hit the next grid line. So, we want the rays to hit the grid lines not more not a less. Therefore, to calculate these values we are going to use right triangle rule again. 
 
@@ -277,12 +278,28 @@ Then we do the wall checking loop, in the loop we should add the offset values t
            break ;
        }
        
-          *******3: calculate the distance :
-          ---------------------------------------------------
+          
+        *******3: calculate the distance :
+        ---------------------------------------------------
           
  Now we have ray coordinate in vertical side and horizontal side so we calculate the distance between ray and our player in the both side 
  then compare it  and we will use the smallest one to draw the wall. 
           
+
+4: Draw the wall :
+---------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 <img width="566" alt="Screen Shot 2022-11-15 at 10 28 42 AM" src="https://user-images.githubusercontent.com/87101785/201882736-704333cf-0ad4-49a7-a9f6-ff2940c7bf75.png">
 
