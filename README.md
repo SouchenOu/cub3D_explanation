@@ -264,23 +264,23 @@ The offsets will be the same but only the direction of the X will be changed..
 
 Then we do the wall checking loop, in the loop we should add the offset values to the ray values till it hit the wall.
 
-       while (1)
-       {
-          if(!wall)
-          {
-             rayY += oY;
-             rayX += oX;
-          }
+               while (1)
+               {
+                  if(!wall)
+                  {
+                     rayY += oY;
+                     rayX += oX;
+                  }
  
-          else {
-          // calcule the distance 
-          then
-           break ;
-       }
+                  else {
+                  // calcule the distance 
+                  then
+                   break ;
+               }
        
           
-        *******3: calculate the distance :
-        ---------------------------------------------------
+      *******3: calculate the distance :
+      ---------------------------------------------------
           
  Now we have ray coordinate in vertical side and horizontal side so we calculate the distance between ray and our player in the both side 
  then compare it  and we will use the smallest one to draw the wall. 
