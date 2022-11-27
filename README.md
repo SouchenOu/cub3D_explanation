@@ -397,7 +397,7 @@ distance-from-player-toProjectedPlane = ----------------------------------------
                                         
                                        window_width /2
                                        
-                               64 *   -------------------
+                               64 *   -------------------         or  (W_Height)
                                
                                           tan(fov/2)
                                           
@@ -405,6 +405,30 @@ projected_wall_height = --------------------------------------------------------
 
                                     distance-to-the-wall.  (ray distance)
                                                   
+
+<img width="300" alt="Screen Shot 2022-11-27 at 1 38 09 PM" src="https://user-images.githubusercontent.com/87101785/204138903-1b48f361-45e3-476f-86ad-4eca21bcb3cf.png">
+
+
+<img width="695" alt="Screen Shot 2022-11-27 at 1 43 33 PM" src="https://user-images.githubusercontent.com/87101785/204138906-f5523a69-1e5b-46ba-bf7c-1748682ea6c8.png">
+
+
+here we will have a problem in ray distance (each ray will have different distance) (or a wrong distance so we should calculate the right distance by using the right triangle rule)
+
+
+<img width="695" alt="Screen Shot 2022-11-27 at 1 43 33 PM" src="https://user-images.githubusercontent.com/87101785/204139338-93b6e07f-b56e-4b2a-b9f1-7805dc08aef6.png">
+
+<img width="300" alt="Screen Shot 2022-11-27 at 1 38 09 PM" src="https://user-images.githubusercontent.com/87101785/204139345-f33cc650-af81-430b-9533-d13bbe9587d9.png">
+
+
+we have :
+
+cos() = correct distance/ distorted distance
+
+
+so correct distance = cos(ranAngle - rotationAngle).
+
+
+<img width="761" alt="Screen Shot 2022-11-27 at 1 51 24 PM" src="https://user-images.githubusercontent.com/87101785/204139308-97ab81f7-0ca5-4614-aa1f-1b4e7628d9a1.png">
 
 
 
