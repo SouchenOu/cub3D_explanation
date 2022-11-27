@@ -359,6 +359,14 @@ Two triangles are similar if they have the same ratio of corresponding sides and
 
 
 
+
+let's calculate (projectedwallHeight):
+
+
+                                actualWall_height * distance-from-player-toProjectedPlane
+projected_wall_height = -------------------------------------------------------------------
+                                              distance-to-the-wall
+
 ----------------------------------------------------------------------------------------------------------------------------------
 
 <img width="449" alt="Screen Shot 2022-11-15 at 10 30 17 AM" src="https://user-images.githubusercontent.com/87101785/201883051-8e60a731-2349-4041-b268-ca8088c65fab.png">
