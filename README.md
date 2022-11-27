@@ -83,6 +83,12 @@ then we need to define some attributes before we can project and render the worl
 6: calculate the looking angle by using the direction of the player
 
 
+
+<img width="566" alt="Screen Shot 2022-11-15 at 10 28 42 AM" src="https://user-images.githubusercontent.com/87101785/201882736-704333cf-0ad4-49a7-a9f6-ff2940c7bf75.png">
+
+
+
+
 3: GridLine Hit Checkers :
 --------------------------
 
@@ -324,11 +330,17 @@ Okay let's wrap this all up. Using all of these ideas we can finally end up with
 <img width="679" alt="Screen Shot 2022-11-27 at 11 06 14 AM" src="https://user-images.githubusercontent.com/87101785/204129627-89ca711b-3626-4d2e-a13a-190dba6976fa.png">
 
 
+lets talk about what we have !
+
+
+we have our player here and we have the wall in the world(white wall), remember that the wall have the same width and height(Tile_size).
+and we have the projection plane (it is my flat screen), and what i want to find out is if i can travel the view so my wall projection should be draw so the length of the wall projection (is the wallStripHeight). (the height of the wall in our screen).
 
 
 
 
-<img width="566" alt="Screen Shot 2022-11-15 at 10 28 42 AM" src="https://user-images.githubusercontent.com/87101785/201882736-704333cf-0ad4-49a7-a9f6-ff2940c7bf75.png">
+
+
 
 
 <img width="449" alt="Screen Shot 2022-11-15 at 10 30 17 AM" src="https://user-images.githubusercontent.com/87101785/201883051-8e60a731-2349-4041-b268-ca8088c65fab.png">
