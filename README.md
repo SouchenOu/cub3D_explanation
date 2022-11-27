@@ -423,6 +423,10 @@ here we will have a problem in ray distance (each ray will have different distan
 
 we have :
 
+cos () = adjacent / hypotenuse
+
+so 
+
 cos() = correct distance/ distorted distance
 
 
