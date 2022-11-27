@@ -383,7 +383,15 @@ distance-from-player-toProjectedPlane :
 distance-from-player-toProjectedPlane = -----------------------------------------
                                                 
                                                 tan(fov/2)
-                   then:
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+   then:
                    
                                         
                                         
