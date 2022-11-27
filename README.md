@@ -284,11 +284,20 @@ Then we do the wall checking loop, in the loop we should add the offset values t
           
  Now we have ray coordinate in vertical side and horizontal side so we calculate the distance between ray and our player in the both side 
  then compare it  and we will use the smallest one to draw the wall. 
+ 
+ to calculate the distance we use pythagorean rule:
+     (X2−X1)2+(Y2−Y)2
           
 
-4: Draw the wall :
+4: Drawing the walls :
 ---------------------------
 
+
+Okay let's wrap this all up. Using all of these ideas we can finally end up with these steps. Since the number of rays is the size of the width we can create this loop, inside the loop we should do the following steps..
+1- Do the gridline check and get the final ray points.
+2- Calculate the wall height using the HEIGHT of the screen and the ray length.
+3- Calculate the starting point and the ending point of the walls.
+4- Start drawing.
 
 
 
