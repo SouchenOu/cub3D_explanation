@@ -438,6 +438,39 @@ so correct distance = cos(ranAngle - rotationAngle).
 
 
 
+
+
+4:Texture:
+ 
+ 
+ <img width="523" alt="Screen Shot 2022-11-29 at 10 11 26 AM" src="https://user-images.githubusercontent.com/87101785/204493606-75e03a35-644d-4f80-9afd-6c17aa9407a9.png">
+
+
+cub.wallTexture = (unsigned int *) malloc (sizeof(unsigned int) * (unsigned int)cub.texture_width * (unsigned int)cub.texture_height);
+    for(int x=0; x < cub.texture_width; x++)
+    {
+        for(int y = 0; y < cub.texture_height;y++)
+        {
+            //put the value black or blue based on x and y being a multiple
+            if(x % 8  && y % 8 )
+            {
+                cub.wallTexture[(cub.texture_width * y) + x] = 0xadd8e6;
+            }
+            else{
+                cub.wallTexture[(cub.texture_width * y) + x] = 0xFFF0000;
+            }
+        }
+    }
+
+
+so we have all this texture in memory blue and black..
+
+now we should applies this picture (or this texture) into the wall
+
+so how do we i map in my picture (or in my original texture )---> what is the picture that i will going to pent --->to go and pent my wall 
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------
 
 <img width="449" alt="Screen Shot 2022-11-15 at 10 30 17 AM" src="https://user-images.githubusercontent.com/87101785/201883051-8e60a731-2349-4041-b268-ca8088c65fab.png">
