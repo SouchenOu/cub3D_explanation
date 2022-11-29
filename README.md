@@ -446,21 +446,40 @@ so correct distance = cos(ranAngle - rotationAngle).
  <img width="523" alt="Screen Shot 2022-11-29 at 10 11 26 AM" src="https://user-images.githubusercontent.com/87101785/204493606-75e03a35-644d-4f80-9afd-6c17aa9407a9.png">
 
 
-cub.wallTexture = (unsigned int *) malloc (sizeof(unsigned int) * (unsigned int)cub.texture_width * (unsigned int)cub.texture_height);
-    for(int x=0; x < cub.texture_width; x++)
-    {
-        for(int y = 0; y < cub.texture_height;y++)
-        {
-            //put the value black or blue based on x and y being a multiple
-            if(x % 8  && y % 8 )
-            {
-                cub.wallTexture[(cub.texture_width * y) + x] = 0xadd8e6;
-            }
-            else{
-                cub.wallTexture[(cub.texture_width * y) + x] = 0xFFF0000;
-            }
-        }
-    }
+             cub.wallTexture = (unsigned int *) malloc (sizeof(unsigned int) * (unsigned int)cub.texture_width * (unsigned int)cub.texture_height);
+    
+    
+    
+             for(int x=0; x < cub.texture_width; x++)
+    
+             {
+                 
+                 for(int y = 0; y < cub.texture_height;y++)
+                 {
+                 
+                     //put the value black or blue based on x and y being a multiple
+                       if(x % 8  && y % 8 )
+            
+                       {
+                    
+                           cub.wallTexture[(cub.texture_width * y) + x] = 0xadd8e6;
+                        
+                       }
+                       else
+                    
+                       {
+                    
+                          cub.wallTexture[(cub.texture_width * y) + x] = 0xFFF0000;
+                      
+                        }
+                    
+                   }
+              }
+
+
+<img width="562" alt="Screen Shot 2022-11-29 at 12 55 13 PM" src="https://user-images.githubusercontent.com/87101785/204524318-24272779-7c7c-4455-8e78-6f23836d6fbe.png">
+
+
 
 
 so we have all this texture in memory blue and black..
@@ -468,6 +487,15 @@ so we have all this texture in memory blue and black..
 now we should applies this picture (or this texture) into the wall
 
 so how do we i map in my picture (or in my original texture )---> what is the picture that i will going to pent --->to go and pent my wall 
+
+
+
+then calculate the XOffset and the YOffset:
+
+<img width="651" alt="Screen Shot 2022-11-29 at 1 01 14 PM" src="https://user-images.githubusercontent.com/87101785/204524262-c6f4737c-1776-4f47-b153-545cd510e6cf.png">
+
+
+<img width="341" alt="Screen Shot 2022-11-29 at 10 55 17 AM" src="https://user-images.githubusercontent.com/87101785/204524287-b8659433-9c66-4c08-8e65-49825aabaa9c.png">
 
 
 
