@@ -489,7 +489,7 @@ now we should applies this picture (or this texture) into the wall
 so how do we i map in my picture (or in my original texture )---> what is the picture that i will going to pent --->to go and pent my wall 
 
 
-
+---------------
 then calculate the XOffset and the YOffset:
 
 <img width="651" alt="Screen Shot 2022-11-29 at 1 01 14 PM" src="https://user-images.githubusercontent.com/87101785/204524262-c6f4737c-1776-4f47-b153-545cd510e6cf.png">
@@ -497,6 +497,11 @@ then calculate the XOffset and the YOffset:
 
 <img width="341" alt="Screen Shot 2022-11-29 at 10 55 17 AM" src="https://user-images.githubusercontent.com/87101785/204524287-b8659433-9c66-4c08-8e65-49825aabaa9c.png">
 
+++++we have a texture (with texture_width and texture_height)
+
+offsetX: is how much in x do we i have to navigate to reach to my actually colonne pixel to paint it
+
+offsetY: is how much in y do we i have to navigate to reach to my actually colonne pixel to paint it
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
