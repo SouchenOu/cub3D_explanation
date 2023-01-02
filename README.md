@@ -86,7 +86,7 @@ then we need to define some attributes before we can project and render the worl
 
 
 
-3: GridLine Hit Checkers :
+2::: GridLine Hit Checkers :
 --------------------------
 
 here we will calculate ray.x and ray.y (ray coordinate)
