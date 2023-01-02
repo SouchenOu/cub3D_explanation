@@ -57,7 +57,7 @@ Briefly, Raycasting is the process of shooting an invisible ray from a point, in
  
 
  
- 1::: define some attribute:
+ 1::: Define some attributes:
  -----------------------------------------------------
  
 *For our purpose, each cube will have the size_width 64 and size_height 64 units. (you can choose any size it should be just the same in height and width). 
